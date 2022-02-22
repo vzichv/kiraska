@@ -1,0 +1,158 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.fields {
+  width: 100%;
+  max-width: 600;
+  margin: 0 auto;
+  padding: 20;
+}
+
+.repeat {
+  height: 63;
+  padding: 0 40px;
+  border-radius: 6px;
+  font-size: 20;
+  line-height: 63px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #43ca7b;
+  cursor: pointer;
+  border: none;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.repeat:hover {
+  color: rgb(240, 240, 240);
+  background-color: #3ebd73;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.15);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.15);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.15);
+}
+
+.row {
+  margin: 15px 0;
+}
+
+.row label,
+.subtitle {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #777;
+}
+
+.row .paid-label {
+  margin: 0;
+  color: black;
+  font-size: 16px;
+}
+
+.row input:not([type="checkbox"]) {
+  height: 30px;
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 0 5px;
+  font-size: 16px;
+  border-radius: 4px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid darkolivegreen;
+}
+
+.row div {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.row a {
+  display: block;
+  margin-top: 3px;
+}
+
+.finish {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.select-button {
+  height: 63;
+  padding: 20px 40px;
+  border-radius: 6px;
+  font-size: 20;
+  line-height: 63px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #43ca7b;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  transition: background-color 0.3s
+}
+
+.select-button:hover {
+  color: rgb(240, 240, 240);
+  background-color: #3ebd73;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.15);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.15);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.15);
+  transition: background-color 0.3s
+}
+
+.city-buttons {
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 70px;
+}
+
+.city-button {
+  height: 38px;
+  padding: 0 12px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #000;
+  background-color: #fff;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  border: 0px solid transparent;
+}
+
+.city-button:hover {
+  background-color: #e4e4e4;
+}
+
+.city-button:first-of-type {
+  border-radius: 6px 0 0 6px;
+}
+
+.city-button:last-of-type {
+  border-radius: 0 6px 6px 0;
+}
+
+.city-button:focus,
+.city-button:active,
+.city-button.active {
+  color: #fff;
+  background-color: #222;
+  outline: none;
+}
