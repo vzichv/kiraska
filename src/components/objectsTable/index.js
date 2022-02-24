@@ -1,11 +1,14 @@
 import './objectsTable.sass';
 
 import { observer } from 'mobx-react-lite';
+import { useState } from 'react';
 
 import Store from './../../store';
 
 const TableWithDetails = observer((props) => {
-  const { allDetails, detailsWithOnlyChanges, fullInfo } = props;
+  const { allDetails, fullInfo } = props;
+
+  const [render, rerender] = useState(false);
 
   function filter(details) {
     const result = details.filter( row => {
